@@ -4,6 +4,7 @@ import serviceImg from './images/Service.jpg';
 import cardImg from './images/Card.jpg';
 import shoppingImg from './images/Shopping.jpg';
 import dataImg from './images/Data.jpg';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function Navbar() {
   return (
@@ -140,7 +141,7 @@ function CaseStudies() {
       </p>
       <div className="as-four-col">
         {cases.map(c => (
-          <a href="/" className="as-case-card" key={c.title}>
+          <a href="/coming-soon" className="as-case-card" key={c.title}>
             <div className="as-case-thumb">
               <img src={c.img} alt={c.title} className="as-case-thumb-img" />
             </div>
@@ -170,14 +171,29 @@ function Footer() {
 
 function App() {
   return (
-    <>
-      <Navbar />
-      <Hero />
-      <About />
-      <HowIWork />
-      <CaseStudies />
-      <Footer />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={
+          <>
+            <Navbar />
+            <Hero />
+            <About />
+            <HowIWork />
+            <CaseStudies />
+            <Footer />
+          </>
+        } />
+        <Route path="/coming-soon" element={<ComingSoon />} />
+      </Routes>
+    </BrowserRouter>
+  );
+}
+
+function ComingSoon() {
+  return (
+    <div style={{ padding: '4rem 8vw' }}>
+      <h1>Coming Soon</h1>
+    </div>
   );
 }
 
