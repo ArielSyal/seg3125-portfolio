@@ -127,11 +127,12 @@ function HowIWork() {
 
 function CaseStudies() {
   const cases = [
-    { img: serviceImg,  tag: 'Assignment 2 · Service Site',  title: 'Local Service Business' },
-    { img: cardImg,     tag: 'Assignment 3 · Memory Game',   title: 'Jeu de Mémoire'         },
-    { img: shoppingImg, tag: 'Assignment 4 · E-Commerce',    title: 'Online Store'            },
-    { img: dataImg,     tag: 'Assignment 5 · Analytics',     title: 'Data Dashboard'          },
+    { img: serviceImg,  tag: 'Assignment 2 · Service Site',  title: 'Local Service Business', externalLink: 'https://hairbyariel.netlify.app/' },
+    { img: cardImg,     tag: 'Assignment 3 · Memory Game',   title: 'Jeu de Mémoire',         externalLink: null },
+    { img: shoppingImg, tag: 'Assignment 4 · E-Commerce',    title: 'Online Store',            externalLink: null },
+    { img: dataImg,     tag: 'Assignment 5 · Analytics',     title: 'Data Dashboard',          externalLink: null },
   ];
+  
   return (
     <section className="as-section" id="cases">
       <p className="as-label">Work</p>
@@ -141,14 +142,24 @@ function CaseStudies() {
       </p>
       <div className="as-four-col">
         {cases.map(c => (
-          <a href="/coming-soon" className="as-case-card" key={c.title}>
+          <a 
+            href={c.externalLink || "/coming-soon"} 
+            className="as-case-card" 
+            key={c.title}
+            target={c.externalLink ? "_blank" : "_self"}
+            rel={c.externalLink ? "noreferrer" : ""}
+          >
             <div className="as-case-thumb">
               <img src={c.img} alt={c.title} className="as-case-thumb-img" />
             </div>
             <div className="as-case-body">
               <p className="as-case-tag">{c.tag}</p>
               <h3 className="as-case-title">{c.title}</h3>
-              <span className="as-coming-soon">Coming Soon</span>
+              {c.externalLink ? (
+                <span className="as-coming-soon">View Live Site</span>
+              ) : (
+                <span className="as-coming-soon">Coming Soon</span>
+              )}
             </div>
           </a>
         ))}
