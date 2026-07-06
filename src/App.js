@@ -129,7 +129,7 @@ function CaseStudies() {
   const cases = [
     { img: serviceImg,  tag: 'Assignment 2 · Service Site',  title: 'Local Service Business', externalLink: 'https://hairbyariel.netlify.app/' },
     { img: cardImg,     tag: 'Assignment 3 · Memory Game',   title: 'Jeu de Mémoire',         externalLink: 'https://forgetmenotbyariel.netlify.app/' },
-    { img: shoppingImg, tag: 'Assignment 4 · E-Commerce',    title: 'Online Store',            externalLink:  'https://studio2000.netlify.app/shop' },
+    { img: shoppingImg, tag: 'Assignment 4 · E-Commerce',    title: 'Online Store',            externalLink: 'https://studio2000.netlify.app/shop' },
     { img: dataImg,     tag: 'Assignment 5 · Analytics',     title: 'Data Dashboard',          externalLink: null },
   ];
   
