@@ -82,7 +82,7 @@ function HowIWork() {
         <div>
           <p className="as-body-text">
             I'm currently a 2nd year Software Engineering student at the University of Ottawa.
-            Over the course of SEG3125 — Analysis and Design of User Interfaces, I built my
+            Over the course of SEG3125 Analysis and Design of User Interfaces, I built my
             UI/UX design skills from the ground up. This was my first time formally studying
             design, and this portfolio reflects that journey in real time.
           </p>
@@ -91,7 +91,7 @@ function HowIWork() {
             colour theory, typography, iconography, layout, and Gestalt principles, and learned
             how to apply them to real interface design decisions. I also worked through
             user-centered design, usability heuristics, verbal communication in UI, and data
-            visualization — each through a hands-on project.
+            visualization.
           </p>
           <p className="as-body-text">
             The four case studies below are the result of that work.
