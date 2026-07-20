@@ -96,7 +96,12 @@ function HowIWork() {
             <p className="as-concepts-label">Design Concepts</p>
             <div className="as-concepts-list">
               <span className="as-concept-pill as-concept-active">Visual Communication</span>
-              <span className="as-concept-pill">More Concepts to Come!</span>
+              <span className="as-concept-pill as-concept-active">User-Centered Design</span>
+              <span className="as-concept-pill as-concept-active">Gestalt Principles</span>
+              <span className="as-concept-pill as-concept-active">Usability Heuristics</span>
+              <span className="as-concept-pill as-concept-active">Verbal Communication</span>
+              <span className="as-concept-pill as-concept-active">Data Visualization</span>
+              <span className="as-concept-pill as-concept-active">Internationalization</span>
             </div>
           </div>
         </div>
@@ -130,7 +135,7 @@ function CaseStudies() {
     { img: serviceImg,  tag: 'Assignment 2 · Service Site',  title: 'Local Service Business', externalLink: 'https://hairbyariel.netlify.app/' },
     { img: cardImg,     tag: 'Assignment 3 · Memory Game',   title: 'Jeu de Mémoire',         externalLink: 'https://forgetmenotbyariel.netlify.app/' },
     { img: shoppingImg, tag: 'Assignment 4 · E-Commerce',    title: 'Online Store',            externalLink: 'https://studio2000.netlify.app/' },
-    { img: dataImg,     tag: 'Assignment 5 · Analytics',     title: 'Data Dashboard',          externalLink: null },
+    { img: dataImg,     tag: 'Assignment 5 · Analytics',     title: 'Data Dashboard',          externalLink: 'https://foodpricesdashboardbyariel.netlify.app/' },
   ];
   
   return (
