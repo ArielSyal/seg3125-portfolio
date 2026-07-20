@@ -81,16 +81,20 @@ function HowIWork() {
       <div className="as-two-col">
         <div>
           <p className="as-body-text">
-            I'm currently a 2nd year Software Engineering student at the University of Ottawa, building 
-            my UI/UX design skills through SEG3125 Analysis and Design of User Interfaces. This is my 
-            first time formally studying design, and this portfolio reflects my learning in real time.
+            I'm currently a 2nd year Software Engineering student at the University of Ottawa.
+            Over the course of SEG3125 — Analysis and Design of User Interfaces, I built my
+            UI/UX design skills from the ground up. This was my first time formally studying
+            design, and this portfolio reflects that journey in real time.
           </p>
           <p className="as-body-text">
-            So far I've been exploring principles of visual communication including colour
-            typography, iconography and learning how to apply them to real interface design decisions.
+            Throughout the semester I explored principles of visual communication including
+            colour theory, typography, iconography, layout, and Gestalt principles, and learned
+            how to apply them to real interface design decisions. I also worked through
+            user-centered design, usability heuristics, verbal communication in UI, and data
+            visualization — each through a hands-on project.
           </p>
           <p className="as-body-text">
-            As the semester progresses I'll be adding more design concepts and methods to this section as I learn them.
+            The four case studies below are the result of that work.
           </p>
           <div className="as-concepts">
             <p className="as-concepts-label">Design Concepts</p>
@@ -106,7 +110,7 @@ function HowIWork() {
           </div>
         </div>
         <div className="as-card">
-          <h4 className="as-card-title">Resources I'm learning from</h4>
+          <h4 className="as-card-title">Resources I learned from</h4>
           <ul className="as-link-list">
             <li>
               <a href="https://www.nngroup.com/" target="_blank" rel="noreferrer" className="as-link">
@@ -121,6 +125,11 @@ function HowIWork() {
             <li>
               <a href="https://www.w3schools.com/bootstrap5/" target="_blank" rel="noreferrer" className="as-link">
                 Bootstrap 5 — W3Schools
+              </a>
+            </li>
+            <li>
+              <a href="https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1810000403" target="_blank" rel="noreferrer" className="as-link">
+                Statistics Canada — Food Price Data
               </a>
             </li>
           </ul>
